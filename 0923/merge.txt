@@ -1,1 +1,2 @@
 ﻿Some text for master.
+Another text for master.
