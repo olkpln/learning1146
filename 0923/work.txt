@@ -1,5 +1,11 @@
+для НОВОЙ ветки:
 git checkout -b <имя ветки>
+для существующей или новой, которая есть на удаленном репо:
 git checkout <имя ветки>
+
+git push -u origin testbranch
+аналогично
+git push --set-upstream origin testbranch
 
 git clone https://github.com/ShellKhan/learning1146.git
 git pull
@@ -8,7 +14,6 @@ git checkout testbranch
 git remote remove origin
 git remote add origin https://github.com/ShellKhan/tst.git
 git push -u origin testbranch
-
 
 
 
@@ -24,3 +29,17 @@ git push -u origin testbranch
 	- переключаемся на ветку master, и ее тоже апстримим
 	- проверяем на гитхабе результат
 4) устанавливаем дефолтной на гитхабе ветку мастер
+
+
+создали файл в ветке мастер
+создали/переключились на ветку testmerge
+	git checkout -b <имя ветки>
+				 -b - параметр для создания ветки
+изменили файл
+сделали коммит
+запушили с апстримом на гитхаб
+***
+переключились на мастер
+изменили файл
+сделали коммит
+запушили на гитхаб
