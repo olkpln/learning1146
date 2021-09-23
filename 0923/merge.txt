@@ -1,1 +1,2 @@
 ﻿Some text for master.
+Some text for testmerge.
