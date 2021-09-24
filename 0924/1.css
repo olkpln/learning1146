@@ -1,0 +1,52 @@
+﻿body {
+	margin: 0;
+}
+.container {
+	margin: 100px auto;
+	height: 600px;
+	width: 600px;
+	background: pink;
+	border: 1px solid red;
+}
+#input {
+	position: absolute;
+	top: -200px;
+}
+label {
+	display: block;
+	width: 300px;
+	height: 30px;
+	margin: 20px auto;
+	background: white;
+	position: relative;
+}
+label::before,
+label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 14px;
+	left: 2px;
+	width: 30px;
+	height: 0px;
+	border-top: 1px solid #f00;
+	border-bottom: 1px solid #f00;
+	transform-origin: center;
+	transition: all 1.5s ease;
+}
+label::before {
+	transform: rotate(45deg);
+}
+label::after {
+	transform: rotate(-45deg);
+}
+input:checked + label::before,
+input:checked + label::after {
+	transform: rotate(0);
+	border-color: #070;
+}
+input:checked + label::before {
+	height: 14px;
+	top: 6px;
+	border-width: 2px;
+}
