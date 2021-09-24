@@ -126,8 +126,9 @@ label::after {
 .form {
 	background: white;
 	position: relative;
-	width: 250px;
+	width: 60px;
 	height: 50px;
+	padding-right: 90px;
 	margin: 100px auto;
 	border: 1px solid blue;
 	font: bold 20px/50px Arial;
@@ -139,4 +140,18 @@ label::after {
 	height: 20px;
 	width: 20px;
 	vertical-align: top;
+}
+.rtext {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	width: 80px;
+	text-align: center;
+	display: inline-block;
+	opacity: 0;
+	transition: all 3s ease;
+}
+.radio:checked:first-child ~ .rtext:not(:last-child),
+.radio:checked:not(:first-child) ~ .rtext:last-child {
+	opacity: 1;
 }
