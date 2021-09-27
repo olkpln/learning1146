@@ -9,7 +9,7 @@ body {
 	margin: 0;
 }
 .container {
-	margin: 100px auto;
+	margin: 50px auto;
 	background: pink;
 	position: relative;
 	padding: 10px;
@@ -20,6 +20,32 @@ p, h1, h4 {
 	width: 280px;
 	padding: 10px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 800px;
+		padding: 0;
+	}
+	p {
+		position: absolute;
+		margin: 0;
+	}
+	.first {
+		top: 50px;
+		left: 50px;
+	}
+	.second {
+		top: 50px;
+		right: 50px;
+	}
+	.third {
+		bottom: 50px;
+		left: calc(50% - 150px);
+	}
+}
+@media screen and (min-width: 1200px) {
 	
 }
